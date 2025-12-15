@@ -9,7 +9,6 @@ function defilement($chaines) {
             usleep(500000);
 
             };
-            break;
             popen('cls', 'w');
         };
 }
