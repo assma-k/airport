@@ -3,6 +3,7 @@ function defilement($chaines, $time) {
    echo "choix couleur :\n";
    echo "1 : rouge\n";
    echo "2 : bleu\n";
+   echo "3 : vert\n";
    $choix = trim(fgets(STDIN));
 
 
@@ -18,6 +19,7 @@ function defilement($chaines, $time) {
             
         };
     }
+
      elseif($choix == 2) {
         for ($j = 0; $j <= $time ; $j++) {
 
@@ -29,6 +31,18 @@ function defilement($chaines, $time) {
             
         };
      } 
+
+     elseif($choix == 3){
+        for ($j = 0; $j <= $time ; $j++) {
+
+        for ($i = 0; $i < $long; $i++) {
+            echo "\033[32m" . "\r" . substr($chaines, $i) . substr($chaines, 0, $i) ."\033[0m" ;
+            usleep(100000);
+
+            };
+            
+        };
+     }
 }
 
 $time = $argv[2];
