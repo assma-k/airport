@@ -2,7 +2,7 @@
 function defilement($chaines, $time) {
    echo "choix couleur :\n";
    echo "1 : rouge\n";
-   echo "2 bleu\n";
+   echo "2 : bleu\n";
    $choix = trim(fgets(STDIN));
 
 
